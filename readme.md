@@ -63,7 +63,6 @@ import tailwind from "$fresh/plugins/tailwind.ts";
 import svgInjectPlugin from "https://deno.land/x/fresh-plugin-svg-inject/main.js";
 import { defineConfig } from "$fresh/server.ts";
 
-
 export default defineConfig({
 	plugins: [
 		tailwind(),
