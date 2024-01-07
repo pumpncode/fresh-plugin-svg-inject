@@ -45,11 +45,11 @@ const plugin = ({ staticFolder = "./static" } = {}) => ({
 							svg = await (await fetch(svgUrl)).text();
 						}
 						catch {
-							const { pathname: imgSourceCleaned } = new URL(imgSource, "http://localhost:8000");
+							const imgSourceFilePath = join(staticFolderPath, imgSource);
 
-							const imgSourceFilePath = join(staticFolderPath, imgSourceCleaned);
+							const { pathname: imgSourceFilePathCleaned } = new URL(imgSourceFilePath, "http://localhost:8000");
 
-							svg = await readTextFile(imgSourceFilePath);
+							svg = await readTextFile(imgSourceFilePathCleaned);
 						}
 
 						const svgDocument = stringToDocument(svg);
