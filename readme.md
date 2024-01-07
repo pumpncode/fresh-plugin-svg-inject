@@ -2,16 +2,18 @@
 
 This is a plugin for [fresh](https://github.com/denoland/fresh) that injects SVGs referenced in `img` tags into the rendered html text.
 
-Basically it turns this:
+It turns this:
 
 ```html
+<!-- generated html of your component -->
 <img
 	src="assets/logo.svg"
 	class="h-full"
 />
 ```
 
-```svg
+```html
+<!-- ./assets/logo.svg -->
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 3000 3500"
@@ -32,6 +34,7 @@ Basically it turns this:
 into this:
 
 ```html
+<!-- html with svg injected into it -->
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 3000 3500"
