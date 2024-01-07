@@ -60,7 +60,7 @@ The ids are renamed to avoid collisions. This plugin is in essence a modern, les
 
 ```js
 import tailwind from "$fresh/plugins/tailwind.ts";
-import svgInjectPlugin from "https://deno.land/x/fresh-plugin-svg-inject/main.js";
+import svgInjectPlugin from "https://deno.land/x/fresh_plugin_svg_inject/main.js";
 import { defineConfig } from "$fresh/server.ts";
 
 export default defineConfig({
