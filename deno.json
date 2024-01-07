@@ -1,0 +1,46 @@
+{
+	"tasks": {
+		"docs": "jsdoc --configure jsdoc.json"
+	},
+	"lint": {
+		"rules": {
+			"exclude": [
+				"require-await"
+			],
+			"tags": [
+				"fresh",
+				"recommended"
+			]
+		}
+	},
+	"compilerOptions": {
+		"allowJs": true,
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"alwaysStrict": true,
+		"checkJs": true,
+		"exactOptionalPropertyTypes": true,
+		"jsx": "react-jsx",
+		"jsxImportSource": "preact",
+		"noErrorTruncation": true,
+		"noFallthroughCasesInSwitch": false,
+		"noImplicitAny": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"strict": true,
+		"lib": [
+			"deno.ns",
+			"deno.unstable",
+			"dom",
+			"dom.iterable",
+			"dom.asynciterable"
+		]
+	},
+	"nodeModulesDir": true,
+	"loader": "native"
+}

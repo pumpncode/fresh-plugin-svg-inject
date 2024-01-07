@@ -1,0 +1,51 @@
+{
+	"plugins": [
+		"plugins/markdown",
+		"node_modules/funbridge-jsdoc-template/typescript",
+		"node_modules/funbridge-jsdoc-template/category",
+		"node_modules/funbridge-jsdoc-template/component",
+		"node_modules/funbridge-jsdoc-template/typedef-import",
+		"node_modules/jsdoc-mermaid"
+	],
+	"recurseDepth": 10,
+	"source": {
+		"include": [
+			"./"
+		],
+		"includePattern": ".(?:j|t)sx?$",
+		"excludePattern": "(node_modules/|documentation/)"
+	},
+	"sourceType": "module",
+	"tags": {
+		"allowUnknownTags": true,
+		"dictionaries": [
+			"jsdoc",
+			"closure"
+		]
+	},
+	"templates": {
+		"cleverLinks": false,
+		"monospaceLinks": false,
+		"search": true,
+		"default": {
+			"includeDate": false
+		}
+	},
+	"opts": {
+		"encoding": "utf8",
+		"destination": "./documentation/",
+		"template": "./node_modules/funbridge-jsdoc-template",
+		"recurse": true,
+		"verbose": false,
+		"theme_opts": {
+			"default_theme": "dark",
+			"seach": true,
+			"commonNav": true,
+			"typedefs": true
+		}
+	},
+	"markdown": {
+		"hardwrap": false,
+		"idInHeadings": true
+	}
+}
